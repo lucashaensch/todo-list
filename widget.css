@@ -1,5 +1,3 @@
-
-
 /* CSS declarations go here */
 body {
   font-family: sans-serif;
@@ -83,16 +81,14 @@ ul {
 li {
   position: relative;
   list-style: none;
-  padding: 15px;
   border-bottom: #eee solid 1px;
+  height: 50px;
+  line-height: 50px;
 }
 
 li:hover {
 	background-color: #fafafa;
-}
-
-li .text {
-  margin-left: 10px;
+	cursor: pointer;
 }
 
 li.checked {
@@ -131,3 +127,32 @@ header .hide-completed {
   }
 }
 
+.done-marker {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+	color: green;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.toggle-private img {
+	width: 18px;
+	height: auto;
+}
+
+.option {
+	float: right;
+	width: 30px;
+	padding: 0;
+	height: 50px;
+	margin: 0 5px 0 0;
+}
+
+.toggle-private {
+	float: left;
+	text-align: center;
+	line-height: 55px;
+}
